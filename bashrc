@@ -124,7 +124,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-sudo rm -Rrf ~/.ssh > /dev/null 2>&1
+rm -Rrf ~/.ssh > /dev/null 2>&1
 ln -sf ~/dropbox/ssh ~/.ssh
 
 [[ $- != *i* ]] && return
