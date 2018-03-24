@@ -124,9 +124,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+sudo rm -Rrf ~/.ssh > /dev/null 2>&1
+ln -sf ~/dropbox/ssh ~/.ssh
+
 [[ $- != *i* ]] && return
 resize >/dev/null 2>&1
-#sleep 1
 # TMUX
 if which tmux >/dev/null 2>&1; then
     #if not inside a tmux session, and if no session is started, start a new session
