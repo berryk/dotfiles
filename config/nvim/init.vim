@@ -20,5 +20,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
