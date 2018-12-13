@@ -16,5 +16,10 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+export https_proxy=http://user:pass@proxy-usny.nslb.ad.moodys.net:80
+export http_proxy=http://user:pass@proxy-usny.nslb.ad.moodys.net:80
