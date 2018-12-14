@@ -5,5 +5,5 @@ printf "deb http://ftp.debian.org/debian stretch-backports main" > /etc/apt/sour
 apt-get update
 apt-get upgrade
 
-apt-get install -qy tilix dbus-x11
+apt-get install -qy tilix dbus-x11 host
 
